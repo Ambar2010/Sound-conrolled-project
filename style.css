@@ -25,6 +25,7 @@ body
     letter-spacing: 3px;
   }
   .copy_right_footer {
+    font-family: 'Source Sans Pro', sans-serif;
    position: fixed;
    color: #6c757d;
    bottom: 0;
