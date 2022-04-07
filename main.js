@@ -1,6 +1,6 @@
 function startClassification() {
     navigator.mediaDevices.getUserMedia({audio : true});
-    classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/Vw1xsWei0/', modelReady);
+    classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/Vw1xsWei0/model.json', modelReady);
 }
 function modelReady() {
     classifier.classify(gotResults);
@@ -30,7 +30,10 @@ function gotResults(error, results)  {
             img.src = 'cat.jpg';
            
         }
-     
+        else {
+            img.src = 'ear.jpg';
+           
+        }
       
     }
     
